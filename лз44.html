@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf 8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>INPUT</title>
+</head>
+<style>
+ body{
+ background: LightSalmon;color: Maroon;
+}
+textarea {
+ background: LightBlue;border-radius: 9px;
+}
+</style>
+<body>
+  <form name="test" method="post" action="input1.php">
+    <p><b>Ваше имя:</b><br>
+      <input type="text" size="40">
+    </p>
+    <p><b>Список группы:</b><Br>
+      <input type="radio" name="kursant" value="Анисимова">Анисимова<Br>
+      <input type="radio" name="kursant" value="Березин">Березин<Br>
+      <input type="radio" name="kursant" value="Галутво">Галутво<Br>
+      <input type="radio" name="kursant" value="Даирова">Даирова<Br>
+      <input type="radio" name="kursant" value="Дьячков">Дьячков<Br>
+      <input type="radio" name="kursant" value="Карданов">Карданов<Br>
+      <input type="radio" name="kursant" value="Карпов">Карпов<Br>
+      <input type="radio" name="kursant" value="Корабельников">Корабельников<Br>
+      <input type="radio" name="kursant" value="Корнева">Корнева<Br>
+  </form>
+  <title>TEXTAREA</title>
+  <form action="textarea1.php" method="post">
+    <p><b>Введите ваш отзыв:</b></p>
+    <p><textarea rows="10" cols="45" name="text"></textarea></p>
+    <p><input type="submit" value="Отправить"></p>
+  </form>
+  <title>SELECT</title>
+  <form action="select1.php" method="post">
+    <p><select size="3" multiple name="hero[]">
+        <option disabled>Выберите героя</option>
+        <option value="Анисимова">Анисимова</option>
+        <option value="Березин">Березин</option>
+        <option value="Галутво">Галутво</option>
+        <option value="Даирова">Даирова</option>
+        <option value="Дьячков">Дьячков</option>
+        <option value="Карданов">Карданов</option>
+        <option value="Карпов">Карпов</option>
+        <option value="Корабельников">Корабельников</option>
+        <option value="Корнева">Корнева</option>
+      </select></p>
+    <p><input type="submit" value="Отправить"></p>
+  </form>
+  <title>BUTTON</title>
+  <p style="text­align: center"><button>Ок</button>
+    <button><img style="vertical­align: middle">Отмена</button>
+  </p>
+</body>
+
+</html>
