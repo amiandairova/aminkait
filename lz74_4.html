@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+</head>
+<style media="screen">
+  .alert{
+    padding:15px;
+    border:2px solid #800080;
+    border-radius:4px;
+    color:#800080;
+    background-color:#FFEFD5;
+  }
+  </style>
+<body>
+<h3>Цитата</h3>
+</body>
+<script>
+  var div = document.createElement ('div');
+  div.className = "alert alert-success";
+  div.innerHTML = "<strong>Пока вы спите,</strong> Мы работаем!";
+  document.body.insertBefore(div, document.body.firstChild);
+  var div2=div.cloneNode(true);
+  div.parentNode.insertBefore(div2, div.nextSibling);
+</script>
+</html>

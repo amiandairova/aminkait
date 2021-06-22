@@ -1,0 +1,246 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: #f2f2f2;
+}
+header {
+  background: white;
+  text-align: center;
+}
+header a {
+  text-decoration: none;
+  outline: none;
+  display: block;
+  transition: .3s ease-in-out;
+}
+.logo {
+  color: black;
+  font-family: 'Playfair Display', serif;
+  font-size: large;
+  padding: 20px 20px 0px 50px;
+
+}
+.topinfo {
+    color:#273037;
+    font-size: 12px;
+    margin-top: 15px;
+}
+.gimn {
+    font-size: 9px;
+    margin-right: 300px;
+}
+
+.kartinka {
+    width: 100px;
+    height: 100px;
+    vertical-align: middle;
+}
+
+
+.navbar {
+    background-color: steelblue;
+    width: 100%;
+}
+nav {
+  display: table;
+  margin: 0 auto;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.topmenu:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.topmenu > li {
+  width: 15%;
+  float: left;
+  position: relative;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+
+}
+.topmenu > li > a {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  padding: 15px 30px;
+}
+.topmenu li a:hover { color: #D5B45B; }
+.submenu-link:after {
+  content: "\f107";
+  font-family: "FontAwesome";
+  color: inherit;
+  margin-left: 10px;
+}
+.submenu {
+  background: #273037;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  z-index: 5;
+  width: 180px;
+  opacity: 0;
+  transform: scaleY(0);
+  transform-origin: 0 0;
+  transition: .5s ease-in-out;
+}
+.submenu a {
+  color: white;
+  text-align: left;
+  padding: 12px 15px;
+  font-size: 13px;
+  border-bottom: 1px solid rgba(255,255,255,.1);
+}
+.submenu li:last-child a { border-bottom: none; }
+.topmenu > li:hover .submenu {
+  opacity: 1;
+  transform: scaleY(1);
+}
+
+.multy {
+    margin-left: 1px;
+}
+
+
+/* Слайдер: */
+.slider{
+    max-width: 800px;
+    /* Положение элемента устанавливается относительно его исходной позиции: */
+    position: relative;
+    /* Центрируем по горизонтали: */
+    margin: auto;
+    height: 300px;
+}
+
+/* Картинка масштабируется по отношению к родительскому элементу: */
+.slider .item img {
+    /* Элемент меняет размер так, чтобы заполнить блок и сохранить пропорции: */
+    object-fit: cover;
+    width: 100%;
+    height: 300px;
+}
+
+/* Кнопки назад и вперёд: */
+.slider .previous, .slider .next {
+    /* Добавляет курсору иконку, когда тот оказывается над кнопкой: */
+    cursor: pointer;
+    /* Положение элемента задаётся относительно границ браузера: */
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    /* Оформление самих кнопок: */
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    /* Плавное появление фона при наведении курсора: */
+    transition: 0.6s ease;
+    /* Скругление границ: */
+    border-radius: 0 3px 3px 0;
+}
+.slider .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* При наведении курсора на кнопки добавляем фон кнопок: */
+.slider .previous:hover,
+.slider .next:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* Анимация слайдов: */
+.slider .item {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@keyframes fade {
+    /* Устанавливаем и изменяем степень прозрачности: */
+    from {
+        opacity: 0.4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+footer {
+    position: relative; /* Фиксированное положение */
+    left: 0; bottom: 0; /* Левый нижний угол */
+    padding: 10px; /* Поля вокруг текста */
+    background: grey; /* Цвет фона */
+    color: #fff; /* Цвет текста */
+    width: 100%; /* Ширина слоя */
+    margin-top: 0;
+   }
+
+
+.end {
+    text-align: center;
+}
+
+.rukovod {
+    font-size: x-large;
+    margin-left: 40px;
+}
+
+.kubishko {
+    margin-left: 0px;
+    width: 300px;
+    height: 400px;
+}
+
+
+.frog a {
+    text-align: center;
+}
+
+.frog {
+    max-width: 200px;
+}
+
+.bigtext {
+    margin-left: 500px;
+    margin-right: 500px;
+    text-align: justify; /* Выравнивание по ширине */
+
+}
+
+
+
+
+.left {
+    float: left;
+    margin-left: 20%;
+}
+
+.right {
+    float: right;
+    margin-right: 7%;
+    margin-top: 1%;
+}
+
+
+
+.secondary {
+    border: 4px solid grey;
+    padding: 10px; /* Поля вокруг текста */
+    border-width: 1px;
+    width: 300px;
+    height: 200px;
+
+}
+
+.secondary li {
+    list-style-type: none;
+    text-align: center;
+    text-align: justify; /* Выравнивание по ширине */
+    font-size: 24px;
+
+}
